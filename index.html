@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find My Pet - ABM de Clientes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📋 ABM de Clientes</h1>
+  </header>
+
+  <main class="container">
+    <section class="form-card">
+      <h2>🧾 Datos del Cliente</h2>
+      <form id="clienteForm">
+        <div class="input-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Ej: Juan" required>
+        </div>
+        <div class="input-group">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" placeholder="Ej: Pérez" required>
+        </div>
+        <div class="input-group">
+          <label for="dni">DNI</label>
+          <input type="text" id="dni" placeholder="Ej: 12345678" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Ej: juan@mail.com" required>
+        </div>
+        <div class="input-group">
+          <label for="telefono">Teléfono</label>
+          <input type="text" id="telefono" placeholder="Ej: 1122334455" required>
+        </div>
+
+        <button type="submit" id="btnGuardar" class="btn btn-guardar">💾 Guardar</button>
+      </form>
+    </section>
+
+    <section class="listado-card">
+      <h2>👥 Lista de Clientes</h2>
+      <div class="tabla-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>DNI</th>
+              <th>Email</th>
+              <th>Teléfono</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tablaClientes"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
